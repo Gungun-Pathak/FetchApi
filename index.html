@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+  
+</body>
+<script>
+  // function generateTable(){
+  //   const table=document.createElement("table");
+  //   const tBody=document.createElement("tbody");
+  //   for(var i=0;i<2;i++){
+  //     const row=document.createElement("tr");
+  //     for(var j=0;j<2;j++){
+  //       const col=document.createElement("td");
+  //       const text=document.createTextNode(`col ${j} , row ${i}`);
+  //       col.appendChild(text);
+  //       row.appendChild(col);
+
+  //     }
+  //     tBody.appendChild(row);
+
+  //   }
+  //   table.appendChild(tBody);
+  //   document.body.appendChild(table);
+  //   table.setAttribute("border","2");
+    
+    
+
+  // }
+  // generateTable();
+  const promiseOne=new Promise(function(resolve,reject){
+    setTimeout(()=>{console.log("gungun")},1000)
+    resolve();
+  })
+  promiseOne.then(()=>{
+    console.log("resolved");
+  })
+
+</script>
+</html>
